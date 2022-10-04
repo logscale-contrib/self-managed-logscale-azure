@@ -2,3 +2,8 @@ environments:
   rg:
     name: "Azure-resource-group"
     templateName: "tf-self-managed-logscale-azure-resource-group"
+  k8s:
+    name: "Azure-AKS"
+    templateName: "tf-self-managed-logscale-azure-k8s-cluster"
+    needs:
+      - rg
